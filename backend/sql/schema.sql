@@ -12,6 +12,8 @@ CREATE TABLE users (
   city TEXT,
   phone_number TEXT,
   position TEXT,
+  sms_alerts boolean,
+  email_alerts boolean,
   created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );

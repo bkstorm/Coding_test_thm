@@ -1,8 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const morganMiddleware = require('./middelware/logger');
 require('dotenv').config({ path: path.join(__dirname, '.env') });
+const morganMiddleware = require('./middelware/logger');
+const passport = require('./middelware/passport');
+const authRouter = require('./routes/auth.route');
+const userRouter = require('./routes/user.route');
 
 const port = 3002;
 
@@ -21,7 +24,10 @@ app.use(
     extended: true,
   }),
 );
+app.use(passport);
 app.use(morganMiddleware);
+app.use(authRouter);
+app.use(userRouter);
 app.get('/health', (req, res) => res.send({ message: 'ok' }));
 
 const server = app.listen(port, () => {

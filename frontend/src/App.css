@@ -1,5 +1,10 @@
-.container {
-  display: flex;
-  justify-content: center;
+:root {
+  --bs-font-sans-serif: 'Source Sans Pro', sans-serif;
+  --theme-button: #153376;
+  --theme-text: #4d4f5c;
 }
 
+html,
+body {
+  color: var(--theme-text);
+}

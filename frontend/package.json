@@ -6,11 +6,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.20.1",
+    "await-to-js": "^3.0.0",
+    "axios": "^0.21.1",
+    "formik": "^2.2.6",
+    "jsonwebtoken": "^8.5.1",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "^4.0.1"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1",
+    "react-toastify": "^7.0.4",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "eslint": "^7.11.0",
